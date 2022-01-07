@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    ;
+}
+body{
+
+display: flex;
+align-items: center;
+min-height: 100px;
+background-color: #444;
+justify-content: center;
+}
+.container{
+top: 200px;;
+position: relative;
+}
+.tea {
+    width: 280px;
+    height: 300px;
+    background:linear-gradient(to right,#fff , rgb(221, 210, 210));
+    position: relative;
+    border-bottom-left-radius: 45%;
+    border-bottom-right-radius: 45%;
+
+
+    /* align-items: center; */
+    /* text-align: center; */
+    /* position: absolute; */
+    /* transform: translate(50%); */
+    /* left: 50%; */
+}
+.top{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background:linear-gradient(to right,#fff , rgb(209, 199, 199));
+    top: -30px;
+    border-radius: 50%;
+    
+
+}
+
+.circal {
+    position: absolute;
+    background: linear-gradient(to left,#f7f3f7 , #dfdbd4);
+    height: 50px;
+    width: calc(100% - 20px);
+    left: 10px;
+    top: 5px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.cha{
+    position: absolute;
+    height: 100%;
+    top: 20px;
+    left: 0;;
+    width: 100%;
+    background:linear-gradient(to right,rgb(233, 134, 42) , rgb(209, 164, 39));
+    border-radius: 50%;
+}
+.handel {
+    position: absolute;
+    left: 197px;
+    top: 16px;
+    width: 100px;
+    height: 150px;
+    border: 25px solid #dfd4d4;
+    border-left: 24px solid transparent;
+    border-bottom: 24px solid transparent;
+    border-radius: 50%;
+    transform: rotate(35deg);
+}
+.pleat{
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 500px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(to right,#f7f3f7 , #dfdbd4);
+    box-shadow: 5px 7px 1px #000;
+    ;
+}
+.doaa{
+    position: relative;
+    padding: 0 20px;
+    z-index: 1;;
+    display: flex;
+}
+.doaa span{
+    position: relative;
+    min-width: 8px;
+    height: 100px;
+    bottom: 50px;
+    margin: 0 ;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 4px 4px;
+    animation: animate 5s linear infinite;
+    filter:blur(8px);
+    animation-delay: calc(var(--i) '' -0.5s);
+}
+@keyframes animate{
+0%
+{
+    transform: translateY(0) scaleX(1);
+    opacity: 0;
+   
+}
+15%{
+    opacity: 1;
+}
+
+50%
+{
+    transform: translateY(-150px) scaleX(5);
+}
+95%{
+    opacity: 0;
+}
+
+100%
+{
+    transform: translateY(-300px) scaleX(10);
+}
+
+}
